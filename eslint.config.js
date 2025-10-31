@@ -26,6 +26,11 @@ export default defineConfig([
   tseslint.configs.recommended,
   pluginReact.configs.flat.recommended,
   {
+    settings: {
+      react: {
+        version: 'detect',
+      },
+    },
     rules: {
       'no-unused-vars': 'off', // 关闭未使用变量的检查
       'react-refresh/only-export-components': 'off',
